@@ -1,0 +1,23 @@
+.HomePage {
+    border-width: 2px;
+
+    .app-name {
+        font-size: 5rem;
+        margin: 2px auto;
+        align-self: center;
+    }
+    .team-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+
+
+        & > {
+            justify-self: none;
+            align-self: center;
+            text-align: center;
+        }
+
+    }
+}
