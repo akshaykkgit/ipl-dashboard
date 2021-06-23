@@ -1,13 +1,18 @@
 .YearSelector {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: right;
-    font-size: 1.17em;
+    font-size: 2em;
     list-style-type: none;
     column-gap: 20px;
     background-color: coral;
-    ont-weight: bold;
+    font-weight: bold;
     li {
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    .info {
+        font-size: 5rem;
     }
 
 }

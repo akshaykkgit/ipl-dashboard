@@ -26,7 +26,7 @@ export const TeamPage = () => {
        
     );
     if(!team || !team.teamName) {
-       return <h1>Team Not Found</h1>
+       return <h1>Loading..</h1>
     }
     
 
@@ -42,7 +42,7 @@ export const TeamPage = () => {
     { title: 'Wins', value: team.totalWins, color: 'lightgreen' }
    
   ]}
-/>;
+/>
 
         </div>
         <div className="match-details-section">
@@ -53,7 +53,7 @@ export const TeamPage = () => {
             team.matches.slice(1).map(match=> <MatchSmallCard teamName={team.teamName} match={match} />)
         }
         <div className="more-link">
-          <Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}>more ></Link>
+          <h1><Link to={`/teams/${teamName}/matches/${process.env.REACT_APP_DATA_END_YEAR}`}>More</Link></h1>
         </div> 
    
     </div>
